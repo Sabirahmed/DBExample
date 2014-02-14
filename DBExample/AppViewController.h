@@ -7,7 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
 
-@interface AppViewController : UIViewController
+
+
+@interface AppViewController : UIViewController<UITextFieldDelegate>{
+ 
+    sqlite3 *database;
+    
+}
+
+@property (strong, nonatomic) IBOutlet UITextField *name;
+@property (strong, nonatomic) IBOutlet UITextField *address;
+@property (strong, nonatomic) IBOutlet UITextField *mobile;
+@property (strong, nonatomic) IBOutlet UILabel *status;
+
+@property  (retain,nonatomic)NSMutableArray *dataArray;
+- (IBAction)saveData:(id)sender;
+- (IBAction)findData:(id)sender;
+
+@property(strong, nonatomic)NSString *databasePath;
+
+
 
 @end

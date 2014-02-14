@@ -19,6 +19,8 @@
 		C3D7076D1862C29B00FA4680 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D7076B1862C29B00FA4680 /* MainStoryboard_iPhone.storyboard */; };
 		C3D707701862C29B00FA4680 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D7076E1862C29B00FA4680 /* MainStoryboard_iPad.storyboard */; };
 		C3D707731862C29B00FA4680 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D707721862C29B00FA4680 /* AppViewController.m */; };
+		C3D7077A1862C2EA00FA4680 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D707791862C2EA00FA4680 /* libsqlite3.dylib */; };
+		C3D7077D18631D5000FA4680 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D7077B18631D4300FA4680 /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		C3D7076F1862C29B00FA4680 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C3D707711862C29B00FA4680 /* AppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppViewController.h; sourceTree = "<group>"; };
 		C3D707721862C29B00FA4680 /* AppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
+		C3D707791862C2EA00FA4680 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C3D7077B18631D4300FA4680 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D7077D18631D5000FA4680 /* libsqlite3.0.dylib in Frameworks */,
+				C3D7077A1862C2EA00FA4680 /* libsqlite3.dylib in Frameworks */,
 				C3D707541862C29B00FA4680 /* UIKit.framework in Frameworks */,
 				C3D707561862C29B00FA4680 /* Foundation.framework in Frameworks */,
 				C3D707581862C29B00FA4680 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,8 @@
 		C3D707521862C29B00FA4680 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3D7077B18631D4300FA4680 /* libsqlite3.0.dylib */,
+				C3D707791862C2EA00FA4680 /* libsqlite3.dylib */,
 				C3D707531862C29B00FA4680 /* UIKit.framework */,
 				C3D707551862C29B00FA4680 /* Foundation.framework */,
 				C3D707571862C29B00FA4680 /* CoreGraphics.framework */,
@@ -279,6 +287,7 @@
 				GCC_PREFIX_HEADER = "DBExample/DBExample-Prefix.pch";
 				INFOPLIST_FILE = "DBExample/DBExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,6 +299,7 @@
 				GCC_PREFIX_HEADER = "DBExample/DBExample-Prefix.pch";
 				INFOPLIST_FILE = "DBExample/DBExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -313,6 +323,7 @@
 				C3D707781862C29B00FA4680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
